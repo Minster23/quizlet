@@ -20,7 +20,7 @@ jobs:
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
         with:
-          version: v2.14
+          version: v1.54 
 
   test:
     name: Test on Linux with Go 1.27.2
