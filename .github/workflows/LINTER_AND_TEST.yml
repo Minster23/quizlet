@@ -14,13 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
-          go-versions: '1.27.2'
+          go-versions: 'stable'
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+        uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.54 
+          version: v1.64.1
 
   test:
     name: Test on Linux with Go 1.27.2
